@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway Integration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/phone.css">
+    <script src="js/ham.js" defer></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/img/mylogo11.png" alt="Donation">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+
+    </nav>
+    <section id="home">
+        <h4>To feed and educate</h4>
+        <h1>We need your support</h1>
+        <p>
+            Its not how much we give but how much love we put in giving
+        </p>
+        <p class="teresa">
+            - MOTHER TERESA
+        </p>
+        <form id="razor-pay">
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HiEZqBVhnMRxwS"
+                async> </script>
+        </form>
+    </section>
+    <section class="services-container" id="our-services">
+        <h1>Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/fund.png" alt="Error">
+                <h2>FUND RAISING</h2>
+                <p>We raise funds for the oppressed and affected child all over the world. We collect donation aiming to
+                    help the children and keep them safe. Thousands are crowdfunding for various causes and events.
+                    Support a fundraiser today.
+                </p>
+            </div>
+            <div class="box">
+                <img src="img/plant.png" alt="Error">
+                <h2>TREE PLANTATION</h2>
+                <p>We arrange event to make the world green and keep the environment favorable to us. Worldwide Tree
+                    is notable one of them.The Benefits of planting Trees are not only impacting environment and
+                    reduce pollution but it impact on Public Health and Social Benefits. </p>
+            </div>
+            <div class="box">
+                <img src="img/groceries.png" alt="Error">
+                <h2>FOOD AID</h2>
+                <p>It is a non-profit governmental organization (NGO) where people can donate their unused or
+                    unwanted foods which will then be collected and distributed to charitable/welfare homes,
+                    volunteer welfare organisation, refugees community and poor families.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1>Our Clients</h1>
+        <div id="clients">
+            <div class="clients-item">
+                <img src="img/logo1.png" alt="Error">
+            </div>
+            <div class="clients-item">
+                <img src="img/logo2.png" alt="Error">
+            </div>
+            <div class="clients-item">
+                <img src="img/logo3.png" alt="Error">
+            </div>
+            <div class="clients-item">
+                <img src="img/logo4.png" alt="Error">
+            </div>
+        </div>
+    </section>
+
+    <section id="analytics">
+        <div id="analytics-section">
+            <h2 data-aos="fade-up"> <span>Our Team</span> <span></span> </h2>
+            <div class="analytics_box" data-aos="fade-up">
+                <div class="analytics_item" data-aos="fade-right" data-delay="150">
+                    <img src="../img/donators.png" alt="Donators" />
+                    <h3 class="analytics_count"><span data-count="250">0</span>+</h3>
+                    <h5 class="analytics_term">Donators</h5>
+                </div>
+                <div class="analytics_item">
+                    <img src="../img/projects.png" alt="Projects" />
+                    <h3 class="analytics_count"><span data-count="10">0</span>+</h3>
+                    <h5 class="analytics_term">Projects</h5>
+                </div>
+                <div class="analytics_item" data-aos="fade-left" data-delay="250">
+                    <img src="../img/common.png" alt="Team" />
+                    <h3 class="analytics_count"><span data-count="40">0</span>+</h3>
+                    <h5 class="analytics_term">Team</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-home">
+        <div id="copyright"> &copy; Copyright 2020-2021. <br> All rights reserved. Designed by Paras Mehta.</div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script defer src="js/analytics.js"></script>
+    <script>
+        AOS.init({
+            delay: 100,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+
+</html>

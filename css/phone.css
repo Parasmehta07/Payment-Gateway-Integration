@@ -1,0 +1,258 @@
+.line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+
+#navbar
+{
+    position: relative;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+}
+
+.nav-links {
+    position: fixed;
+    display: flex;
+    background: #5b78c7;
+    height: 40vh;
+    width: 100%;
+    top: -42px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -50%);
+    transition: all 1s ease-out;
+    pointer-events: none; 
+}
+
+.nav-links.open {
+    clip-path: circle(1000px at 90% -20%);
+    -webkit-clip-path: circle(1000px at 90% -20%);
+    pointer-events: all;
+}
+
+.nav-links li a {
+    font-size: 25px;
+}
+
+.nav-links li:nth-child(1) {
+    transition: all 0.2s ease 0.2s;
+}
+
+.nav-links li:nth-child(2) {
+    transition: all 0.2s ease 0.2s;
+}
+
+.navlink li:nth-child(3) {
+    transition: all 0.2s ease 0.2s;
+}
+
+.navlink li:nth-child(4) {
+    transition: all 0.2s ease 0.2s;
+}
+
+.nav-links li {
+    opacity: 0;
+}
+
+li.fade {
+    opacity: 1;
+}
+
+.fade:not(.show) {
+      opacity: 1;
+}
+
+#home {
+    flex-direction: column;
+    height: 525px;
+    align-items: center;
+    padding:4px 0px ;
+}
+
+#home::before{
+    height: 94%;
+
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width : 411px) and (max-width : 412px){
+    #home::before {
+        height: 77%;
+    }
+
+    #clients {
+        flex-wrap: wrap;
+    }
+
+    .box {
+    height: 0%;
+    width: 345px;
+    }
+}
+
+.services-container h1 {
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width : 360px) and (max-width : 361px){
+    .services-container h1 {
+        margin-top: 0px;
+    }
+
+    .box {
+        width: 290px;
+        height: 340px;
+        margin-bottom: 33px;
+    }
+}
+
+#clients {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#client-section::before {
+    width: 100%;
+    height: 85%;
+}
+
+@media screen and (min-width : 320px) and (max-width : 321px){
+    #home::before {
+        height: 108%;
+    }
+
+    .box {
+        width: 264px;
+        height: 0%;
+    }
+}
+
+@media screen and (min-width : 375px) and (max-width : 376px){
+    #home::before {
+        height: 76%;
+    }
+
+    #home p {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .box {
+        height: 0%;
+        width: 305px;
+    }
+}
+
+@media screen and (min-width : 414px) and (max-width : 414px){
+
+   #home::before {
+        height: 84%;
+    }
+
+   .box {
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    
+    #navbar ul li a {
+        font-size: 21px;
+    }
+    
+    #home{ 
+            height: 612px;
+            padding: 3px 0px;
+            margin-top: -15%;
+    }
+
+    #home::before{
+         height: 49%;
+        } 
+
+    #home h1 {
+        margin-bottom: 20px;
+        font-size: 1.7rem;
+    }
+    
+    #services{
+        flex-direction: column;
+    }
+
+    .services-container h1 {
+        margin-top: -72px;
+    }
+
+    .services-container h2 {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    .box {
+        width: 91%;
+        height: 265px;
+    }
+     
+    .box img {
+        height: 65px;
+        margin-top: 15px;
+    }
+
+    .box p {
+        font-size: 18px;
+    }
+        
+    #clients{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #clients-item{
+        margin: 0px 4px;
+    }
+    
+    #clients img{
+        height: 85px;
+    }
+    
+    #clients-section{
+        position: relative;
+    }
+    
+    #clients-section::before{
+        height: 100%;
+    }
+}
+
+@media screen and (min-width : 1024px) and (max-width : 1025px){
+
+    #home {
+        height: 615px;
+        padding: 3px 0px;
+        margin-top: 0%;
+    }
+
+    .box p {
+        font-size: 23px;
+    }
+
+    .services-container h1 {
+        margin: 35px;
+        margin-top: -35px;
+    }
+}

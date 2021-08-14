@@ -1,0 +1,285 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 50px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#logo{
+    margin: 5px 34px;
+}
+
+#logo img{
+    margin: 0px 6px;
+    height: 77px;
+    padding-top: 2px;
+    filter: invert(100%);
+}
+
+#navbar {
+    top: 0px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 540px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('../img/photo4.jpg') no-repeat center center/cover;
+    filter: brightness(60%);
+    top: 0px;
+    left: 0px;
+    width: 100%; 
+    height: 83%;
+    z-index: -1;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 61px;
+    font-size: 2.7rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bree Serif', serif;
+    font-style: italic;
+}
+
+#home h4{
+    color: gold;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+} 
+
+.teresa{
+    margin-bottom: 120px;
+}
+
+#razor-pay{
+    margin-top: -100px;
+    padding: 23px;
+}
+
+/* Services Section */
+
+.services-container h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 2.1rem;
+    font-family: 'Bree Serif', serif;
+    padding: 12px;
+}
+
+.services-container h2{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.7rem;
+    padding: 12px;
+}
+
+#services{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: #d3e0f1;
+    margin: 0px 23px;
+    justify-content: space-evenly;
+    width: 510px;
+    text-align: center;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.box img{
+    height: 87px;
+    margin-top: 20px;
+}
+
+.box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client Section */
+
+#client-section h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 2.1rem;
+    font-family: 'Bree Serif', serif;
+    padding: 12px;
+} 
+
+#client-section {
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../img/photo6.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 79%;
+    padding-bottom: 110px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.clients-item {
+    padding: 34px;
+}
+
+#clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 123px;
+}
+
+/* Analytics */
+
+#analytics h2{
+    color: black;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 2.1rem;
+    font-family: 'Bree Serif', serif;
+    padding: 12px;
+} 
+
+#analytics-section{
+    margin-top: 50px;
+}
+
+.analytics_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: url('../img/analytics.jpg');    
+    margin-bottom: 50px;
+  }
+  
+  .analytics_box .analytics_item {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .analytics_box .analytics_item img {
+    width: 90px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border: 4px double black;
+    border-radius: 50%;
+  }
+  
+  .analytics_box .analytics_item .analytics_count {
+    margin-top: 15px;
+  }
+  
+  .analytics_box .analytics_item .analytics_term {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-size: 20px !important;
+  }
+
+/* Footer Section */
+
+#footer-home{
+        position: relative;
+        background-color: black;
+        color: white;
+        /* width: 97%; */
+        text-align: center;
+        display: block;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+}
+
+#contact-us{
+    position: absolute;
+    background-color: black;
+    color: white;
+    /* width: 97%; */
+    text-align: center;
+    display: block;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
